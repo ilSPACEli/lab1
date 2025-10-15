@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Контакти — Відьмак</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title">КОНТАКТИ</h1>
+    <nav class="main-nav">
+      <a href="index.html#syzhet">СЮЖЕТ</a>
+      <a href="index.html#crew">ЗНІМАЛЬНА ГРУПА</a>
+      <a href="index.html#photos">ФОТО</a>
+      <a href="index.html#awards">НАГОРОДИ</a>
+      <a href="contact.html">КОНТАКТИ</a>
+      <a href="contact.html#forms">ФОРМИ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="panel">
+    <h2>Test</h2>
+    <div class="imggrid">
+    <div class="testimg">
+      <img src="images/cyri.jpg" alt="test" class="imgfloat">
+      <p class="bio">Відьмак Ґеральт із Рівії — мутант і мисливець на чудовиськ, який мандрує світом у часи війн та інтриг між королівствами. 
+        Його доля тісно пов’язана з дівчиною Цірі, спадкоємицею Цінтри, що володіє давньою силою Старшої Крові. 
+        Разом із чародійкою Йенніфер, яка стає для Цірі наставницею й матір’ю, Ґеральт намагається захистити дівчину від імперії Нільфґаард та інших сил, що прагнуть використати її могутність. 
+        <img src="images/logo.jpg" alt="Test2" class="imgfloat2">
+        У центрі історії — вибір, боротьба за власну долю та пошук сім’ї, яку створюють не кровні узи, а любов і відданість.</p>
+    </div>
+
+    <div class="imgcover">
+      <img src="images/sword.jpg" alt="test1" class="back1">
+      <img src="images/gerald.jpg" alt="test1" class="back2">
+      <img src="images/trisss.jpg" alt="test1" class="back3">
+    </div>
+    </div>
+  </section><!--Img-->
+  
+  <section class="panel">
+    <div class="panelbutton">
+    <a  href="contact.html#Reg"><button class="buttoncont">Реєстрація</button></a>
+    <a  href="contact.html#loginForm"><button class="buttoncont">Вхід</button></a>
+    <a  href="contact.html#feedbackForm"><button class="buttoncont">Зворотній зв'язок</button></a>
+    <a  href="contact.html#contact"><button class="buttoncont">Наші контакти-</button></a>
+    </div>
+  </section><!--Button-->>
+
+
+  <section id="forms" class="panel">
+    <h2>ФОРМИ</h2>
+
+    <div class="forms-grid">
+      <div id="Reg" class="form-reg">
+        <form id="registerForm" novalidate>
+          <fieldset>
+            <legend>Реєстрація</legend>
+
+            <label>Ім'я
+              <input type="text" name="fname" required minlength="2" placeholder="Ім'я">
+            </label>
+
+            <label>Прізвище
+              <input type="text" name="lname" required minlength="2" placeholder="Прізвище">
+            </label>
+
+            <label>Стать
+              <select> 
+                <option value="test1">Обрати</option>
+                <option value="test1">Чоловіча</option>
+                <option value="test2">Жіночка</option>
+              </select>
+            </label>
+
+            <label>Телефон
+              <input type="tel" name="phone" pattern="^\+?\d{9,15}$" placeholder="+380XXXXXXXXX" required>
+            </label>
+
+            <label>Е-пошта
+              <input type="email" name="email" required placeholder="name@example.com">
+            </label>
+
+            <label>Пароль
+              <input type="password" name="password" minlength="6" required placeholder="мінімум 6 символів">
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" name="agree" required> Я погоджуюсь з умовами
+            </label>
+
+            <div class="form-actions">
+              <button type="submit">Зареєструватися</button>
+            </div>
+          </fieldset>
+        </form>
+      </div><!--Register-->
+
+      <div class="form-card"> 
+        <form id="loginForm">
+          <fieldset>
+            <legend>Вхід</legend>
+
+            <label>Email
+              <input type="email" name="loginEmail" required placeholder="email@example.com">
+            </label>
+
+            <label>Пароль
+              <input type="password" name="loginPassword" required placeholder="Пароль">
+            </label>
+
+            <div class="form-actions">
+              <button type="submit">Увійти</button>
+            </div>
+          </fieldset>
+        </form>
+      </div> <!--loggin-->
+
+      <div class="form-card fullwidth">
+        <form id="feedbackForm">
+          <fieldset>
+            <legend>Зворотній зв'язок</legend>
+            <label>Тема
+              <input type="text" name="subject" required placeholder="Тема повідомлення">
+            </label>
+
+            <label>Е-пошта
+              <input type="email" name="fbEmail" required placeholder="Е-пошта">
+            </label>
+
+            <label>Повідомлення
+              <textarea name="message" rows="6" required placeholder="Ваше повідомлення"></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit">Відправити</button>
+            </div>
+          </fieldset>
+        </form>
+      </div><!--feedback-->
+    </div>
+
+  </section><!--Forms-->
+
+    <section id="contact" class="panel">
+    <h2>Наші контакти</h2>
+
+    <div class="contacts-grid">
+      <div class="contact-card">
+        <h3>Загальні питання</h3>
+        <p><strong>Email:</strong>Friz.Bogdan@lll.kpi.ua</p>
+        <p><strong>Телефон:</strong> +380 99 123 45 67</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Соцмережі</h3>
+        <a href="https://x.com/thewitcher"><img class="social" src="images/x.png" alt="test"></a>
+        <a href="https://www.instagram.com/thewitcher/"><img  class="social" src="images/ins.png" alt="test"></a>
+      </div>
+
+      <div class="contact-card">
+        <h3>Адреса</h3>
+        <address>
+          <p>Фан-клуб "Відьмак"<br>
+          вул. Фантазійна, 1
+          01001, Київ, Україна</p>
+
+          <div class="map">
+            <iframe title="Карта" src="https://maps.google.com/maps?q=Kyiv&t=&z=13&ie=UTF8&iwloc=&output=embed" aria-label="Карта" loading="lazy"></iframe>
+          </div>
+        </address>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Copyright © 2025</p>
+    <p>mob: +380 99 123 45 67 | email: Friz.Bogdan@lll.kpi.ua</p>
+  </div>
+</footer>
+
+<button class="fixed-subscribe-btn" type="button">Підписатися на новини</button>
+
+</body>
+</html>
